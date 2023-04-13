@@ -1,5 +1,6 @@
 import ArtPieces from "../components/ArtPiecesList";
 import Image from "next/image";
+import Navigation from "../components/Navigation";
 
 export default function Spotlight({ randomPiece }) {
   console.log(randomPiece);
@@ -16,6 +17,7 @@ export default function Spotlight({ randomPiece }) {
           alt={randomPiece.name}
         />
       </li>
+      <Navigation />
     </>
   );
 }
